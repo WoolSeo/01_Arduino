@@ -12,7 +12,7 @@
 #include <Wire.h> 
 
 #define DS3231_I2C_ADDRESS 104
-#define PIN 6
+#define PIN 12
 
 
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(25, PIN, NEO_GRB + NEO_KHZ800);

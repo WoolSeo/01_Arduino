@@ -17,7 +17,7 @@ void setup()
   // 3.- Upload the sketch
   // 4.- Comment and upload again to prevent a reset time
   // setDate(seconds(0-59), minutes(0-59), hours(0-23), day(1-7), date(0-31), month(1-12), year(0-99))
-  //setDate(00, 26, 23, 3, 28, 6, 16);
+  setDate(00, 23, 10, 4, 28, 6, 16);
 }
 
 void loop() 
