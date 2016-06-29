@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module fritzingVersion="0.9.0b.06.11.da4e" icon="Custom1.png">
+    <title>AdaFruit</title>
+    <instances>
+        <instance moduleIdRef="32fdbe406bce255cc83a50cf6c7d510c" modelIndex="85410957" path="/Users/seowool/.config/Fritzing/parts/contrib/LPD8806_RGB_LED_Strip__7b29141e9419bc110d2a0e626e69e718.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="AdafruitPiPlate10" modelIndex="85410958" path="/Users/seowool/.config/Fritzing/parts/contrib/Adafruit_Pi_Plate.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="AdafruitPiCobbler10" modelIndex="85410959" path="/Users/seowool/.config/Fritzing/parts/contrib/Pi_Cobbler.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="469eabd56787b8954b8c324101815a84" modelIndex="85410960" path="/Users/seowool/.config/Fritzing/parts/contrib/MCP3008__2f09e113f2d6d4ad4a99f83444d78e59.fzp">
+            <property name="part number" value="MCP3008"/>
+            <views/>
+        </instance>
+        <instance moduleIdRef="dc050912ce400d56deb4f0ffcf1a38c5" modelIndex="85410961" path="/Users/seowool/.config/Fritzing/parts/contrib/DS18B20_Probe_Cable__6924c6075e35b6f972ac3ba69575e724.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="e12ea5b66701fc184cdf62b0c258ec12" modelIndex="85410962" path="/Users/seowool/.config/Fritzing/parts/contrib/Breadboard_Trimpot__2f8ce653380521682dd027eb8b138b04.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="65d0445514adf6b5e6af07d20a865d1b" modelIndex="85410963" path="/Users/seowool/.config/Fritzing/parts/contrib/Adafruit_Gear_reduced_Stepper_Motor__d8ce93a6679b20c1ff4c2bd648c5b07d.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="c5b4205a6aeae01f44ffac1d6b67d055" modelIndex="85410964" path="/Users/seowool/.config/Fritzing/parts/contrib/Adafruit_Positive_RGB_2x16_LCD__ba881b1008ab37d3db5234ae9844d021.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="0012346d7f395dc4ceeac18886a60ad2" modelIndex="85410965" path="/Users/seowool/.config/Fritzing/parts/contrib/Adafruit_Negative_RGB_2x16_LCD__278fea9778364b2a036784247d35e14f.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="65e31feff426e0dde13a0544d0f93a7d" modelIndex="85410966" path="/Users/seowool/.config/Fritzing/parts/contrib/DHT22_Humidity_and_Temperature_Sensor__5a66c01a9adead9b6c488a2653070fb3.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="41f4209de2050129a62e62f6e2389ac4" modelIndex="85410967" path="/Users/seowool/.config/Fritzing/parts/contrib/DHT11_Temperature_and_Humitidy_Sensor__c8d8589d35f4e2e6529ca1ed6d818736.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="280a56bd0a9eb58901157d0c3e0b2134" modelIndex="85410968" path="/Users/seowool/.config/Fritzing/parts/contrib/AM2302_Humidity_and_Temperature_Sensor__cafbd7d627e73316b9803d750df13435.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="4a531c3119db2e1fd301cb1292e45937" modelIndex="85410969" path="/Users/seowool/.config/Fritzing/parts/contrib/PIR_sensor__723e9e78d3d1bdc76f4badecd521c4cb.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="8a5ab4e796d9805b00815dc7d891e846" modelIndex="85410970" path="/Users/seowool/.config/Fritzing/parts/contrib/Membrane_Matrix_Keypad__b4831ed2ed3c9bcc986b7b2d9d5404c5.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="c14d336bc405d9e43b84c1696f076735" modelIndex="85410971" path="/Users/seowool/.config/Fritzing/parts/contrib/BMP085_Breakout__ca6d21cd5eba2e3fa07a26c78b3127dc.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="ada568f230d03dd119d70d0c1b09faee" modelIndex="85410972" path="/Users/seowool/.config/Fritzing/parts/contrib/Adafruit_Ultimate_GPS_Breakout__7b1ceec8f7dc745b1cacffedce449777.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="04e0b302dc3be42bdf6bed4d99941489" modelIndex="85410973" path="/Users/seowool/.config/Fritzing/parts/contrib/TTL_Serial_JPEG_Camera__47773d85ab728344f42cb78920c9b815.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="0733e78050650394f29e84d88d136195" modelIndex="85410974" path="/Users/seowool/.config/Fritzing/parts/contrib/PCA9685_16x12_bit_PWM_Breakout__3e8b9a850a04a1558b36e3f52f04a846.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="9fcfddaf5e09ba62a52e6cc07b80bf71" modelIndex="85410975" path="/Users/seowool/.config/Fritzing/parts/contrib/ADXL335_Accelerometer_Breakout__93edc3da86d4432585d882fc54f80974.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="58bef0fd045bdf63e18dd46043516bb8" modelIndex="85410976" path="/Users/seowool/.config/Fritzing/parts/contrib/MAX31855_Breakout_Board_with_Thermocouple__12a14bc059b4cfb7a7a03a33e4205f53.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="3cbb886ccc8dee1a9eeb967331875e2e" modelIndex="85410977" path="/Users/seowool/.config/Fritzing/parts/contrib/2.1mm_Barrel_Jack_with_Terminal_Block__a366fa84f392f41e0aae50ae8126b7da.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="255e2c34607000b7bedfd3211762bdd4" modelIndex="85410978" path="/Users/seowool/.config/Fritzing/parts/contrib/MCP4725_12_bit_DAC_Breakout__2c52875c90286bc7a5b0e13a92d16cc1.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="fbd893a6581052dc8dea9f8c239c66e7" modelIndex="85410979" path="/Users/seowool/.config/Fritzing/parts/contrib/128x32_I2C_Monochrome_OLED_Display__0d19561f4c54ea983643077b16b81d96.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="1c4ee17835ebddb33e062982eb0725dc" modelIndex="85410980" path="/Users/seowool/.config/Fritzing/parts/contrib/128x32_SPI_Monochrome_OLEDDisplay__d6d100a32befce3bc2a7c324c2db48ae.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="e668db37f545319f20b1f0749943e456" modelIndex="85410981" path="/Users/seowool/.config/Fritzing/parts/contrib/Raspberry_Pi_Model_B__b1e0c6be3ca697083dc27537d9c0b56c.fzp" flippedSMD="true">
+            <property name="flippedSMD" value="true"/>
+            <views/>
+        </instance>
+        <instance moduleIdRef="d6949ad0a7ece438c0fb2310270725ed" modelIndex="85410982" path="/Users/seowool/.config/Fritzing/parts/contrib/128x64_Monochrom_OLED_Display_with_SPI_Control__e4e62ab54f361ab2e6b3b0c63e8abc35.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="64c7e259b88a8fec42a35fedb52b085c" modelIndex="85410983" path="/Users/seowool/.config/Fritzing/parts/contrib/MicroSD_Breakout__94d6b5c853b4b4e36156d440aaeae299.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="589d59f730ff38cb01c9ebefd954eb33" modelIndex="85410984" path="/Users/seowool/.config/Fritzing/parts/contrib/2.2__TFT_with_MicroSD_Breakout__b2df073b6a7397165b3c73fc10f2fb40.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="2a58b8d4afeb9cae33d677ac5ed63df3" modelIndex="85410985" path="/Users/seowool/.config/Fritzing/parts/contrib/1.8__TFT_Display_with_uSD__6f5f706bba56b5459ce07e8298a6fce3.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="5b5cd95590c61a7dde1a5f30cad69387" modelIndex="85410986" path="/Users/seowool/.config/Fritzing/parts/contrib/DS1307_RTC_Breakout__8b7e93e6b2702acead1393eed6597de9.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="779aa53abe241a0f9c9b9c1b322808c3" modelIndex="85410987" path="/Users/seowool/.config/Fritzing/parts/contrib/8x8_LED_Matrix__Green___7f858dff0c69c63c95694515cdd499e7.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="d08d8fb72094ef93eb01b25b3230c413" modelIndex="85410988" path="/Users/seowool/.config/Fritzing/parts/contrib/8x8_LED_Matrix__red___d03c136fbcbe6efd582be21aa1225ab7.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="71be36327f6bce44601aea5c672b3c4a" modelIndex="85410989" path="/Users/seowool/.config/Fritzing/parts/contrib/8x8_LED_Matrix__yellow___ffbc6b785b272d5d56a8157dc307387e.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="59a1abba4a95e8accac32240cad6d976" modelIndex="85410990" path="/Users/seowool/.config/Fritzing/parts/contrib/8x8_LED_Matrix__blue___15bbd90a0532a66547e817e60d27f488.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="b84549fe50bc2950d1c22a64a10c9971" modelIndex="85410991" path="/Users/seowool/.config/Fritzing/parts/contrib/7_Segment_LED_I2C_Backpack__yellow___2be4601c775fba58e7fc054dcfba4a58.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="89681b6a5c290d801647526c5a6be345" modelIndex="85410992" path="/Users/seowool/.config/Fritzing/parts/contrib/7_Segment_LED_I2C_Backpack__green___c54ae7826b5548da1abc52ff5a5f7c06.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="367780ad75826c0a87e828af186cbd0d" modelIndex="85410993" path="/Users/seowool/.config/Fritzing/parts/contrib/7_Segment_LED_I2C_Backpack__blue___81f50798d69f69f3a92db3d6447422e3.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="43ec790db2cc554cc6ee9a2b1dd412ed" modelIndex="85410994" path="/Users/seowool/.config/Fritzing/parts/contrib/7_Segment_LED_I2C_Backpack__red___f40506577ee4a3494108aa16eb278d2f.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="8fa5862060e39e0bbfbdde741fd9766c" modelIndex="85410995" path="/Users/seowool/.config/Fritzing/parts/contrib/8_Line_Bi_Directional_Level_Shifter__b1c0bdb87019141d313fdbad7ec9573d.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="7bbd1d4d45f587d93fed75efe45ea1c3" modelIndex="85410996" path="/Users/seowool/.config/Fritzing/parts/contrib/4_Line_Bi_Directional_Level_Shifter__c8748dc8e96bcd4795f79e8ba3a81798.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="b7e2a5ae0ed84cb26fd0520d63f91acd" modelIndex="85410997" path="/Users/seowool/.config/Fritzing/parts/contrib/Adafruit_PermaProto_1_4_Board__2aa5d848400cee9487f10bc1a178c3ce.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="59bd2a8fc3385ffb0cda45f3a9c860e1" modelIndex="85410998" path="/Users/seowool/.config/Fritzing/parts/contrib/Adafruit_PermaProto_1_2_Board__6fb3040358889b564c74bed38132b932.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="fd7bc393ad1fcd6608c3b0309dbe33fa" modelIndex="85410999" path="/Users/seowool/.config/Fritzing/parts/contrib/Adafruit_Permaproto_Full_sized_Board__ae169a6a52289a88981faa0062203b34.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="434d2e03bfb270a12be7702dacc0cbce" modelIndex="85411000" path="/Users/seowool/.config/Fritzing/parts/contrib/PermaProto_Mint_Tin_Size_Breadboard__b9e405b0ca50e2305425cf8a5f7a4842.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="429554780853871ee7a5d41bb711aebd" modelIndex="85411001" path="/Users/seowool/.config/Fritzing/parts/contrib/LiPoly_Battery__1300mAh___bc55d3710a708443197b3fc3d08dd188.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="d5314926190e7f38121c06c4fed5f7e5" modelIndex="85411002" path="/Users/seowool/.config/Fritzing/parts/contrib/Arcade_Button__blue___0c30cbbdde0863c5df34b75e4acddb07.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="522b10420b06c436804303f5785cc7f2" modelIndex="85411003" path="/Users/seowool/.config/Fritzing/parts/contrib/Arcade_Button__green___c06cbe5fdc608556d31240cb3d96d5ae.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="26261b720ada961cb156d737670a58e3" modelIndex="85411004" path="/Users/seowool/.config/Fritzing/parts/contrib/Arcade_Button__pink___6eef0f7f9c57e71e47b697a8b9021d71.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="7c302c13f06bcdaf3a59388be6d91f1c" modelIndex="85411005" path="/Users/seowool/.config/Fritzing/parts/contrib/Arcade_Button__red___c12cc3bca053e12377a7a3c856ef34e4.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="e23f64e3f24020ebd77fd4c7188f86b9" modelIndex="85411006" path="/Users/seowool/.config/Fritzing/parts/contrib/Arcade_Button__white___56f11dd8030025047c5ba1044fac4aa2.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="fc3431126180c824f25846ca2a776076" modelIndex="85411007" path="/Users/seowool/.config/Fritzing/parts/contrib/Arcade_Button__yellow___afee1ba07e56f9a78a19f30fa6b24e7f.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="a6e08c94df9d17738da9636248327b0c" modelIndex="85411008" path="/Users/seowool/.config/Fritzing/parts/contrib/USB_LiIon_LiPoly_Charger_v1.2__34132c9bf5761bfdca1376f47da2aa99.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="962c0b023e1e8a36dec24b697a3bd051" modelIndex="85411009" path="/Users/seowool/.config/Fritzing/parts/contrib/PowerSwitch_Tail_II__127601765c1940d36b81d290d6d5cd70.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="96dbe71554ce3f1d1ef42d1960e0069c" modelIndex="85411010" path="/Users/seowool/.config/Fritzing/parts/contrib/2.1mm_DC_Barrel_Jack__0d81611f192da410c39c2b4301ccb3cb.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="03826935a80f57df8677eb8f781c21b3" modelIndex="85411011" path="/Users/seowool/.config/Fritzing/parts/contrib/FTDI_Friend__b8a63bca000e913ced1787b675024609.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="8099a059c21891314551ad518605794b" modelIndex="85411012" path="/Users/seowool/.config/Fritzing/parts/contrib/INA219_DC_Current_Sensor_Breakout__85eb151576f970a353c43ba7887286e3.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="87dcb0bbf2b729b09994d4a523e4cf2f" modelIndex="85411013" path="/Users/seowool/.config/Fritzing/parts/contrib/3xAAA_Switchable_Battery_Pack_w_Bare_Wire_Connectors__d238f586aa178a4fdedc3c4b9fd923fe.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="88327f7754719ca366c2940e902cddb7" modelIndex="85411014" path="/Users/seowool/.config/Fritzing/parts/contrib/3xAAA_Battery_Pack_w_Switch__477368ead5739f28fec8b602928df3a0.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="ae7b264ce49d3e0e8a042d559b285af8" modelIndex="85411015" path="/Users/seowool/.config/Fritzing/parts/contrib/4xAA_Switchable_Battery_Pack_w_JST_connector__74f0f194e535f309bdb7f7b45398bd99.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="855edd80f4bde9ea540423678dbe67be" modelIndex="85411016" path="/Users/seowool/.config/Fritzing/parts/contrib/4xAA_Switchable_Battery_Pack_w_Bare_Wire__37cee7988af9b0ea62302178b1e6adb8.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="b7115054c4504ffda4af96edcfe78e6f" modelIndex="85411017" path="/Users/seowool/.config/Fritzing/parts/contrib/MAX98306_Stereo_Amplifier__78707365860f4cafb15533d94d301b8e.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="94042fba23ae8662860e0368a4500ad6" modelIndex="85411018" path="/Users/seowool/.config/Fritzing/parts/contrib/STP16NF06_N_Channel_Power_MOSFET__3418487b384e1481a005411720365224.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="26f6d3fe4ebe6e2c699d15bc40d163b0" modelIndex="85411019" path="/Users/seowool/.config/Fritzing/parts/contrib/Adafruit_Arcade_Joystick__a83e6c09603a2d59a01ac8c0c30bd08a.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="9bb49f5fc6251120ac7bdbdc5551c3f8" modelIndex="85411020" path="/Users/seowool/.config/Fritzing/parts/contrib/7_Segment_LED_I2C_Backpack__white___3e86fe727a1bcac84ed5edc9f4439286.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="ff6c226cd94a765623cc8fb749099d2e" modelIndex="85411021" path="/Users/seowool/.config/Fritzing/parts/contrib/7_Segment_Panel_Voltmeter__3c4d7b381a2e25ccef15832f314c24d9.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="8a096443fe991cb26dee2658ab54d3ab" modelIndex="85411022" path="/Users/seowool/.config/Fritzing/parts/contrib/7_Segment_Panel_Celsius_Thermometer___f1fa055e70b3a0bca76cadde10b9863a.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="6d8dad07dbe0dc935d62fbf95c44d3c4" modelIndex="85411023" path="/Users/seowool/.config/Fritzing/parts/contrib/7_Segment_Panel_Ammeter__7337b7dd1126edc0396a32b15627d11c.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="886eef678ed928d06ef45ebe7c253560" modelIndex="85411024" path="/Users/seowool/.config/Fritzing/parts/contrib/_4050_Hex_Buffer__d5db95d3260767fe4b93a374b186036d.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="0e8fc3d94bd034c7ddb4f807776ab003" modelIndex="85411025" path="/Users/seowool/.config/Fritzing/parts/contrib/74LVC245_Octal_2_Way_Tranceiver__b8a81c0e2baf8dc1ae8d9c7c0d831c8d.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="253333ec52fec9a0dc263ce1ac1808a7" modelIndex="85411026" path="/Users/seowool/.config/Fritzing/parts/contrib/TIP120_Hi_Current_Darlington_Transistor__951a634fcf8984fc7901abe44c8719c5.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="4a4c83b5b8d9036decd4b0f63b009919" modelIndex="85411027" path="/Users/seowool/.config/Fritzing/parts/contrib/LD33_Low_Dropout_Voltage_Regulator__0a93e12e7e89d78c1891e2b9caa1429e.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="28d9ccaf8afb626f1a47925a971cd480" modelIndex="85411028" path="/Users/seowool/.config/Fritzing/parts/contrib/ULN2803_Darlington_Array__b60cbac200ab610b3665bc60b91557ae.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="5e0a41c6feab037d2b3120ad4ea8e396" modelIndex="85411029" path="/Users/seowool/.config/Fritzing/parts/contrib/Rotary_Encoder_with_Knob__7b11449cc823aa59093ad261b18d4ed2.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="261e3f41f6ad7575b12949acf896b094" modelIndex="85411030" path="/Users/seowool/.config/Fritzing/parts/contrib/Adjustable_Breadboard_Power_Supply__2f95abea083fe31b4f03f47115b55445.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="cc8bd676dc6a93353e8535ba7f776f78" modelIndex="85411031" path="/Users/seowool/.config/Fritzing/parts/contrib/MPL115A2_Barometer_Breakout_Board__8639016d44564e11f8c3cdda91420cd3.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="9612bbe436369cb53f8f1b8e106b7a4e" modelIndex="85411032" path="/Users/seowool/.config/Fritzing/parts/contrib/Waterproof_Momentary_Pushbutton__red___8f05d702b603079aede2da86aaad20d4.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="cc0e07b55970509c51126fb6aadfa8c8" modelIndex="85411033" path="/Users/seowool/.config/Fritzing/parts/contrib/Waterproof_Pushbutton__blue___09491e00c7afc7eec7595b4762aaaa5a.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="3001391783d55059755368b570ae8045" modelIndex="85411034" path="/Users/seowool/.config/Fritzing/parts/contrib/Waterproof_Pushbutton__green___2a05ad795dff92bf96447e0e31f1e9be.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="f36ed007240186f136c0046af7ef99d8" modelIndex="85411035" path="/Users/seowool/.config/Fritzing/parts/contrib/Waterproof_Pushbutton__white___ef7b5357b089e56f59f302ad2bcf68ca.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="06e0a9c78e9561a8a4cce85862c1d1be" modelIndex="85411036" path="/Users/seowool/.config/Fritzing/parts/contrib/Maxbotix_MaxSonar_Ultrasonic_Sensor__eda55719435bf789a913c0323644e612.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="291117f8a8e88fc4a178f5b83ee48800" modelIndex="85411037" path="/Users/seowool/.config/Fritzing/parts/contrib/Maxbotix_MaxSonar_Ultrasonic_Sensor__Hi_Res___46aa3af16e6548afb1ef1e17b85bef7a.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="9897e9b539c6a8313a491eb9dbdc592e" modelIndex="85411038" path="/Users/seowool/.config/Fritzing/parts/contrib/Plastic_Solenoid_Valve__be31321902f5e302489cc0ef15547b83.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="036fb930a4c223b7909a80918d588d0c" modelIndex="85411039" path="/Users/seowool/.config/Fritzing/parts/contrib/ADS1015_12_bit_ADC_Breakout__6e59a0fac0230bcd4611c7e8fa547010.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="c3361082b5ff65e60744eb8a291da904" modelIndex="85411040" path="/Users/seowool/.config/Fritzing/parts/contrib/ADS1115_16_bit_ADC_Breakout__ede16b30448e270e58b1e30b5d721f9e.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="f3a7f5738aa787201b23c9ef7dc1dfe8" modelIndex="85411041" path="/Users/seowool/.config/Fritzing/parts/contrib/Adafruit_Flora__27367ce3aa6aea55189dfff9c8c72a54.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="f2e144ceaba4be36d241c54af05c8d3d" modelIndex="85411042" path="/Users/seowool/.config/Fritzing/parts/contrib/Adafruit_FLORA_RGB_Smart_Pixel__da0746254b9e2eb2825e4434f823be27.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="97477556be27d96dc382056f9e4335a3" modelIndex="85411043" path="/Users/seowool/.config/Fritzing/parts/contrib/Arduino_Micro__117f8d5fd1ac6523cf3c8240aa9c84e6.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="6f006c0ea5c100c0eae6312c298c453b" modelIndex="85411044" path="/Users/seowool/.config/Fritzing/parts/contrib/DS18B20_1_Wire_Temperature_Sensor__3571205ef24c5d77f8f3950d608688bb.fzp">
+            <property name="part number" value="DS18B20"/>
+            <views/>
+        </instance>
+        <instance moduleIdRef="bb24f30dc961140b0b1bdb36d7143687" modelIndex="85411045" path="/Users/seowool/.config/Fritzing/parts/contrib/MAX4466_Electret_Microphone_Breakout_Board__8634fad41dfb0055e23b0ce5c9a0affb.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="c79766e29dfadc28c55b8a1c6dd5fab9" modelIndex="85411046" path="/Users/seowool/.config/Fritzing/parts/contrib/GoodFET_v42__c2dcc568e71e7999ce8a77b7af539169.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="b345dceb5b2da2c0db543dc7bacaf0a0" modelIndex="85411047" path="/Users/seowool/.config/Fritzing/parts/contrib/Flora_Accelerometer_Compass_Sensor__81335c89897ed02535d694a40e945d48.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="e7916acabb1e701177ed9e4c382de3bb" modelIndex="85411048" path="/Users/seowool/.config/Fritzing/parts/contrib/Flora_Lux_Sensor__1b71757d9f4ff8c1979b334b3185562a.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="50dd7f3c46efb77187e3038e244bc825" modelIndex="85411049" path="/Users/seowool/.config/Fritzing/parts/contrib/TMP006_Temperature_Sensor__08c8ce7d550daf555710bc75bcdd26f7.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="5f931bf73fa1c23675a1f96fda160ee4" modelIndex="85411050" path="/Users/seowool/.config/Fritzing/parts/contrib/Vibration_Motor__3f75c41f09d3f86b002b144460c7f162.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="f5449721070fe504ba20394a28b0f4a8" modelIndex="85411051" path="/Users/seowool/.config/Fritzing/parts/contrib/BeagleBone_Black__7fab878f3c590bbf730a21e634512213.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="738222d201b452940fcf01f57d0de8a0" modelIndex="85411052" path="/Users/seowool/.config/Fritzing/parts/contrib/AT42QT1010_Momentary_Capsense_Breakout__2c5ed10a8e220d7b7f7757726b26049e.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="b3c6bb7ff75d84be39b3e3bb3023e958" modelIndex="85411053" path="/Users/seowool/.config/Fritzing/parts/contrib/AT42QT1012_Toggle_switch_Capsense_Breakout__8cc705cc3808b070f1f474050bcaaed1.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="d67247a28691115c4110dd55f4830bfa" modelIndex="85411054" path="/Users/seowool/.config/Fritzing/parts/contrib/TCS34725__eac837f4b20cdc4f0698c27e347a490c.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="a92aa79092ba84009f077b4cbccffbbc" modelIndex="85411055" path="/Users/seowool/.config/Fritzing/parts/contrib/FLORA_Color_Sensor___3a3754d109307fb0a92a4161f6470c6b.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="4b828433752e768815d6d7eb977a120e" modelIndex="85411056" path="/Users/seowool/.config/Fritzing/parts/contrib/Adafruit_CC3000_WiFi_Breakout__a436790f86435bac9b70823ad4a59428.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="56e412cf1e48d5236112eb52fcb2c9c3" modelIndex="85411057" path="/Users/seowool/.config/Fritzing/parts/contrib/Adafruit_GEMMA__28f00ebd3810328d1e2ba004e7df69bb.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="eadfc90fa7f65beadb2394640aa77dba" modelIndex="85411058" path="/Users/seowool/.config/Fritzing/parts/contrib/Trinket_3V__2dd3c46eab871d56d3357b20e052b565.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="898313c41aa907bc43b27d39a12f3702" modelIndex="85411059" path="/Users/seowool/.config/Fritzing/parts/contrib/Trinket_5V__8976d6a5d8c27ad33f0da1fcfba2389a.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="bdaa138c25734c511ab575f732da595a" modelIndex="85411060" path="/Users/seowool/.config/Fritzing/parts/contrib/Adafruit_CC3000_Shield_for_Arduino__aa5cb3f7deaa76476aa50f01f4168bfa.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="ae4db8d3284fa60d26fe0c340991d18f" modelIndex="85411061" path="/Users/seowool/.config/Fritzing/parts/contrib/Adafruit_Bluefruit_Bluetooth_Module__62c678934fe124b9961d7eb2e2f1b067.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="743f2250b8a2c07fbad80522b46001a2" modelIndex="85411062" path="/Users/seowool/.config/Fritzing/parts/contrib/USB_TTL_Serial_Cable__48f59aac877dd787a20a0d85cc2b2cb2.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="b19773f3d9556842948cfd17ecda1ddd" modelIndex="85411063" path="/Users/seowool/.config/Fritzing/parts/contrib/ST2012_2.8W_Class_D_Stereo_Amplifier__2c9a683f29afecd71e94ef4463f62c25.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="06099320a43fcce29030d25f3b6693c8" modelIndex="85411064" path="/Users/seowool/.config/Fritzing/parts/contrib/Neopixel_Strip____White__60_m___e2ddc61f73c5c777ac4e147e0d24e6f6.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="3276e0a47406432d7dfad49e0ee5f5cc" modelIndex="85411065" path="/Users/seowool/.config/Fritzing/parts/contrib/Neopixel_Strip____Black__60_m___0ea01f433b942700409847ae1f75d0f9.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="f209970289bed32e1d561dd7f3821f49" modelIndex="85411066" path="/Users/seowool/.config/Fritzing/parts/contrib/Adafruit_Feedback_Servo__large___575633614cca5116a0de12ca7e5306f9.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="9352f017fa7aa88874a9c9af299b97a3" modelIndex="85411067" path="/Users/seowool/.config/Fritzing/parts/contrib/Adafruit_Feedback_Servo__small___e29a0e3cef79e961bf67d687d9ef44d7.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="013cba901af1948c67ab7d34914a39f0" modelIndex="85411068" path="/Users/seowool/.config/Fritzing/parts/contrib/Adafruit_Bluefruit_EZ_LINK_v1.0__cb4ef135af0c443b4a48f7a783d37ed5.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="51f14db1a1f99b042abade09be732dc4" modelIndex="85411069" path="/Users/seowool/.config/Fritzing/parts/contrib/Adafruit_10_DOF_IMU_Breakout__b51597e524d5f20b27c0e17e083437c2.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="006e43359f5f1c12dbd7ecc0b177ad6e" modelIndex="85411070" path="/Users/seowool/.config/Fritzing/parts/contrib/Neopixel_Ring_16__a4764aa79ef64f55f68d02a7d10b65fd.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="3aab5157f164aac9643cc0b1e5e3dc65" modelIndex="85411071" path="/Users/seowool/.config/Fritzing/parts/contrib/Neopixel_24_Ring__4825204173b0c9d944583b2e73a3936d.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="c6c4630f0c57b8e6859a7986cfc82173" modelIndex="85411072" path="/Users/seowool/.config/Fritzing/parts/contrib/Neopixel_Ring_12__d1b1c18d877cf89e6a4c564113880c8d.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="a4d23aae4030b9479a4777b13940fb1c" modelIndex="85411073" path="/Users/seowool/.config/Fritzing/parts/contrib/nRF8001_Bluetooth_LE_Breakout__598f5fa84d8e9ea32bb1984944b072fc.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="e2ee0ce12fa12d18e848aac83452299e" modelIndex="85411074" path="/Users/seowool/.config/Fritzing/parts/contrib/Adafruit_Trellis__76cf1e6dc43e6b08ecdb2d0455374314.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="af98bf0f9e7ab4bbeced71a5ac2b340b" modelIndex="85411075" path="/Users/seowool/.config/Fritzing/parts/contrib/CAP1188_8_Key_Captouch__d27914700cfa9b18c5c33ad25c9d6a08.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="ca4826fdc5b8bd584a4c461c0c7d522d" modelIndex="85411076" path="/Users/seowool/.config/Fritzing/parts/contrib/Neopixel_8x8_Matrix__681d2d97b80fe03128017b754f90f12f.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="46637c40601bc0443b93e633500cbb9f" modelIndex="85411077" path="/Users/seowool/.config/Fritzing/parts/contrib/1.27__128x96_16_bit_OLED_Breakout__670c40be1868e7b49674580b2d37c018.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="7ef3ae6b3fea62534ab09b1114fef680" modelIndex="85411078" path="/Users/seowool/.config/Fritzing/parts/contrib/AT42QT1070_5_Channel_Capacitive_Touch_Breakout__69d07d35457aa479c172d794a118cffb.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="f040817ef39d5c3373ee7aa2ac445c11" modelIndex="85411079" path="/Users/seowool/.config/Fritzing/parts/contrib/MAX31850_Thermocouple_Breakout__b0c21649cc5c9cad7b76d41191749619.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="d869957242a5b48004c48b230edacf12" modelIndex="85411080" path="/Users/seowool/.config/Fritzing/parts/contrib/Analog_Thumb_Joystick__4ebcbdeb8b9f7622175e56ab21b3d086.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="41932eaddaf8b7a024f17491df868580" modelIndex="85411081" path="/Users/seowool/.config/Fritzing/parts/contrib/HMC5883L_Compass_Breakout__09b329bd7fcddb1cf28e59c6517c9f3a.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="349318f2b3d79f3ba1a8ad012b1bccc1" modelIndex="85411082" path="/Users/seowool/.config/Fritzing/parts/contrib/TPA2016_Stereo_Amplifier__ac3e96b6b06c104402937bf8272bd612.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="TMP007" modelIndex="85411083" path="/Users/seowool/.config/Fritzing/parts/contrib/TMP007.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="FLORA LSM9DS0" modelIndex="85411084" path="/Users/seowool/.config/Fritzing/parts/contrib/FLORA LSM9DS0.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="LSM9DS0" modelIndex="85411085" path="/Users/seowool/.config/Fritzing/parts/contrib/LSM9DS0.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="FONA_SMA" modelIndex="85411086" path="/Users/seowool/.config/Fritzing/parts/contrib/FONA_SMA.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="PowerBoost 500 Basic Pad" modelIndex="85411087" path="/Users/seowool/.config/Fritzing/parts/contrib/PowerBoost 500 Basic Pad.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="FONA_UFL" modelIndex="85411088" path="/Users/seowool/.config/Fritzing/parts/contrib/FONA_UFL.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="PowerBoost 500 Charger Pad" modelIndex="85411089" path="/Users/seowool/.config/Fritzing/parts/contrib/PowerBoost 500 Charger Pad.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="PowerBoost 500 Charger Bare" modelIndex="85411090" path="/Users/seowool/.config/Fritzing/parts/contrib/PowerBoost 500 Charger Terminal.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="PowerBoost 500 Basic Terminal" modelIndex="85411091" path="/Users/seowool/.config/Fritzing/parts/contrib/PowerBoost 500 Basic Terminal.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="PowerBoost 1000 Basic JST Pad" modelIndex="85411092" path="/Users/seowool/.config/Fritzing/parts/contrib/PowerBoost 1000 Basic JST Pad.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="PowerBoost 1000 Basic Terminal USB" modelIndex="85411093" path="/Users/seowool/.config/Fritzing/parts/contrib/PowerBoost 1000 Basic Terminal USB.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="PowerBoost 1000 Basic Pad USB" modelIndex="85411094" path="/Users/seowool/.config/Fritzing/parts/contrib/PowerBoost 1000 Basic Pad USB.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="PowerBoost 1000 Basic JST Terminal" modelIndex="85411095" path="/Users/seowool/.config/Fritzing/parts/contrib/PowerBoost 1000 Basic JST Terminal.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="PowerBoost 1000 Basic Terminal Terminal" modelIndex="85411096" path="/Users/seowool/.config/Fritzing/parts/contrib/PowerBoost 1000 Basic Terminal Terminal.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="PowerBoost 1000 Basic JST USB" modelIndex="85411097" path="/Users/seowool/.config/Fritzing/parts/contrib/PowerBoost 1000 Basic JST USB.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="PowerBoost 1000 Basic Terminal Pad" modelIndex="85411098" path="/Users/seowool/.config/Fritzing/parts/contrib/PowerBoost 1000 Basic Terminal Pad.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="PowerBoost 1000 Basic Pad Pad" modelIndex="85411099" path="/Users/seowool/.config/Fritzing/parts/contrib/PowerBoost 1000 Basic Pad Pad.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="trinketpro 5.0" modelIndex="85411100" path="/Users/seowool/.config/Fritzing/parts/contrib/trinketpro 5.0.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="trinketpro 3.3" modelIndex="85411101" path="/Users/seowool/.config/Fritzing/parts/contrib/trinketpro 3.3.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="PCA9685" modelIndex="85411102" path="/Users/seowool/.config/Fritzing/parts/contrib/PCA9685.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="tlc5947" modelIndex="85411103" path="/Users/seowool/.config/Fritzing/parts/contrib/tlc5947.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="tlc59711" modelIndex="85411104" path="/Users/seowool/.config/Fritzing/parts/contrib/tlc59711.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Si5351A_REV-C" modelIndex="85411107" path="/Users/seowool/.config/Fritzing/parts/contrib/Si5351A.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="3.5in 480x320 rev B" modelIndex="85411108" path="/Users/seowool/.config/Fritzing/parts/contrib/3.5in 480x320.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Adafruit 16x8 Monochrome LED Backpack" modelIndex="85411109" path="/Users/seowool/.config/Fritzing/parts/contrib/16x8 Monochrome LED Backpack.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="MCP23017" modelIndex="85411110" path="/Users/seowool/.config/Fritzing/parts/contrib/MCP23017_I2C_I_O_Expander.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Neopixel Strip White 30/m" modelIndex="85411111" path="/Users/seowool/.config/Fritzing/parts/contrib/Neopixel_Strip_White_30_m.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Neopixel Strip Black 30/m" modelIndex="85411112" path="/Users/seowool/.config/Fritzing/parts/contrib/Neopixel_Strip_Black_30_m.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="EZ-SFX Amp" modelIndex="85411439" path="/Users/seowool/.config/Fritzing/parts/contrib/EZ-SFX Amp.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="EZ-SFX" modelIndex="85411440" path="/Users/seowool/.config/Fritzing/parts/contrib/EZ-SFX.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="NeoJewel" modelIndex="85411442" path="/Users/seowool/.config/Fritzing/parts/contrib/NeoJewel.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="ft232h" modelIndex="85411450" path="/Users/seowool/.config/Fritzing/parts/contrib/ft232h.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="PAM8302A" modelIndex="85411455" path="/Users/seowool/.config/Fritzing/parts/contrib/PAM8302A.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Cobbler Plus Cable" modelIndex="85416592" path="/Users/seowool/.config/Fritzing/parts/contrib/Cobbler Plus Cable.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Cobbler Plus" modelIndex="85416768" path="/Users/seowool/.config/Fritzing/parts/contrib/Cobbler Plus.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="T Cobbler Plus" modelIndex="85416930" path="/Users/seowool/.config/Fritzing/parts/contrib/T Cobbler Plus.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="T Cobbler Plus Cable" modelIndex="85416932" path="/Users/seowool/.config/Fritzing/parts/contrib/T Cobbler Plus Cable.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="UART_BLEFriend" modelIndex="85416952" path="/Users/seowool/.config/Fritzing/parts/contrib/UART_BLEFriend.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="gemma" modelIndex="85416956" path="/Users/seowool/.config/Fritzing/parts/contrib/gemma.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Huzzah ESP8266" modelIndex="85416989" path="/Users/seowool/.config/Fritzing/parts/contrib/Huzzah_ESP8266.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Flora_BLE" modelIndex="85417012" path="/Users/seowool/.config/Fritzing/parts/contrib/Flora_BLE.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="BNO055" modelIndex="85417180" path="/Users/seowool/.config/Fritzing/parts/contrib/BNO055.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="verter-pad" modelIndex="85417182" path="/Users/seowool/.config/Fritzing/parts/contrib/verter_pad.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="verter-usb" modelIndex="85417184" path="/Users/seowool/.config/Fritzing/parts/contrib/verter_usb.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="verter-screw" modelIndex="85417355" path="/Users/seowool/.config/Fritzing/parts/contrib/verter_screw.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="PiTFT 2.2in HAT" modelIndex="85417363" path="/Users/seowool/.config/Fritzing/parts/contrib/PiTFT_2.2in_HAT.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Cap HAT" modelIndex="85417368" path="/Users/seowool/.config/Fritzing/parts/contrib/Cap_HAT.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Matrix HAT" modelIndex="85417397" path="/Users/seowool/.config/Fritzing/parts/contrib/Matrix_HAT.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Adafruit_powerpush_prerelease_87ba750fb021fb59a1fb4661772aa020_1" modelIndex="85417572" path="/Users/seowool/.config/Fritzing/parts/contrib/Adafruit_powerpush_prerelease_87ba750fb021fb59a1fb4661772aa020_1.fzp">
+            <views/>
+        </instance>
+    </instances>
+</module>
