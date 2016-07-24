@@ -16,7 +16,7 @@
 
 
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(25, PIN, NEO_GRB + NEO_KHZ800);
-uint32_t color = strip.Color(232, 101, 12);
+uint32_t color = strip.Color(255, 255, 255);
 
 int  seconds, minutes, hours, day, date, month, year;
 String weekDay;
