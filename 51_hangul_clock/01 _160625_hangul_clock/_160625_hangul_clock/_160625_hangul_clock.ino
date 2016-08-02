@@ -4,7 +4,7 @@
 #include <Adafruit_NeoPixel.h>
 #include <avr/power.h>
 
-#define PIN 6 
+#define PIN 12
 
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(25, PIN, NEO_GRB + NEO_KHZ800);
 uint32_t color = strip.Color(232, 101, 12);
