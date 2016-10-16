@@ -16,7 +16,7 @@
 int  seconds, minutes, hours, day, date, month, year;
 String weekDay;
 
-#define PIN 12 
+#define PIN 12
 
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(25, PIN, NEO_GRB + NEO_KHZ800);
 uint32_t color1 = strip.Color(255, 0, 0);
@@ -38,7 +38,7 @@ void setup() {
   
   pinMode(10, INPUT);
   pinMode(11, INPUT);
-  //setDate(00, 00, 00, 11, 5, 8, 16);
+  setDate(00, 00, 15, 11, 5, 8, 16);
 }
 
 void loop() {
