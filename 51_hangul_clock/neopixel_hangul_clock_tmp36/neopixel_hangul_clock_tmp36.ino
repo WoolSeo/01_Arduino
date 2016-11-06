@@ -12,11 +12,18 @@
 #include <Adafruit_NeoPixel.h>
 
 #define DS3231_I2C_ADDRESS 104
+#define PIN 12
 
 int  seconds, minutes, hours, day, date, month, year;
 String weekDay;
 
-#define PIN 12
+int cdsValue;
+int cdsPin = A1;
+float tempValue;
+int tempPin =  A0;
+
+
+
 
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(25, PIN, NEO_GRB + NEO_KHZ800);
 uint32_t color1 = strip.Color(255, 0, 0);
@@ -37,11 +44,20 @@ void setup() {
   Wire.begin();
   
   
-  setDate(00, 50, 19, 11, 5, 8, 16);
+  //setDate(00, 50, 19, 11, 5, 8, 16);
 }
 
 void loop() {
-  
+
+    Serial.println(analogRead(cdsPin));
+    //온도 확인 
+    float voltage = analogRead(tempPin) * 5000;
+    voltage /= 1023.0; 
+    // now print out the temperature
+    tempValue = (voltage - 500) * 0.1 ;
+    Serial.print("temperature : ");
+    Serial.println(tempValue);
+    
     getDate();
    
     // 시, 분, 초 출력
@@ -62,7 +78,7 @@ void loop() {
     minutesFilter(minutes); // 분(minute) LED 출력
     strip.show();
 
-  delay(1000);
+    delay(1000);
 }
 
 void getDate()
