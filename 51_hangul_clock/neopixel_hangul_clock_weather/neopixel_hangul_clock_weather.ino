@@ -1,6 +1,6 @@
-// RGB LED 아두이노 한글시계 만들기
-// 03 NEO PIXEL LED  + 시계 제어하기
-// 제작 : wool@wool.pe.kr  (16044 백윤기)
+// RGB LED 아두이노 한글시계 만들기(mkr1000)
+// NEO PIXEL LED  + 시계 제어하기 + 날씨/기온 디스플레이
+// 제작 : wool@wool.pe.kr
 //
 // 참고
 // - http://www.kocoafab.cc/tutorial/view/595
@@ -17,8 +17,9 @@
 #define DS3231_I2C_ADDRESS 104
 
 #define PIN 6 // neopixel pin - mkr : 6, nano : 12
-char ssid[] = "GSHS6";       //와이파이 SSID
-char pass[] = "seoulPhy";   //와이파이 password 
+
+char ssid[] = "Wool iphone6 2nd";       //와이파이 SSID
+char pass[] = "1q3e5t7u";   //와이파이 password 
 
 int  seconds, minutes, hours, day, date, month, year;
 String weekDay;
@@ -77,7 +78,7 @@ void setup() {
   
   //pinMode(10, INPUT);
   //pinMode(11, INPUT);
-  //setDate(11, 40, 1, 11, 5, 8, 16);
+  //setDate(11, 34, 17, 11, 5, 8, 16);
 
   delay(10);
   //WiFi연결 시도
