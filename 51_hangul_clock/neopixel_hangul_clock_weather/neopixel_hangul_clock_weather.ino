@@ -18,7 +18,7 @@
 
 #define PIN 6 // neopixel pin - mkr : 6, nano : 12
 
-char ssid[] = "Wool iphone6 2nd";       //와이파이 SSID
+char ssid[] = "phyphy";       //와이파이 SSID
 char pass[] = "1q3e5t7u";   //와이파이 password 
 
 int  seconds, minutes, hours, day, date, month, year;
