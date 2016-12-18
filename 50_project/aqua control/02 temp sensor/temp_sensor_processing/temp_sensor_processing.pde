@@ -60,12 +60,14 @@ void draw() {
   
   textAlign(RIGHT);
   fill(255);
-  text("temp0", width * 0.75, 100);
+  text("temp(room)", width * 0.75, 100);
   text(temp0, width * 0.9, 100);
-  text("temp1", width * 0.75, 150);
-  text(temp1, width * 0.9, 150);
-  text("temp2", width * 0.75, 200);
-  text(temp2, width * 0.9, 200);
+  text("humidity(room)", width * 0.75, 150);
+  text(humi0, width * 0.9, 150);
+  text("temp(tank1)", width * 0.75, 200);
+  text(temp1, width * 0.9, 200);
+  text("temp(tank2)", width * 0.75, 250);
+  text(temp2, width * 0.9, 250);
   
 }
 
@@ -140,6 +142,10 @@ void serialEvent(Serial p)
     print("  temp2 state : ");
     println(data[5]);
     temp2 = data[5];
+    
+    print("  humi0 state : ");
+    println(data[6]);
+    humi0 = data[6];
   }
   
 
