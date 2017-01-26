@@ -12,7 +12,7 @@
 #include <Adafruit_NeoPixel.h>
 
 #include <SPI.h>
-#include <WiFi101.h>
+#include <WiFi.h>
 
 #define DS3231_I2C_ADDRESS 104
 
@@ -26,15 +26,11 @@ String weekDay;
 
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(25, PIN, NEO_GRB + NEO_KHZ800);
 
-
 int colors_r = 255;
 int colors_g = 255;
 int colors_b = 255;
 int brightness = 255;
 int weather_state = 1;
-
-
-
 
 WiFiServer server(80);
 WiFiClient client;
@@ -66,15 +62,17 @@ int count=0;
 
 void setup() {
   Serial.begin(115200);  
-  
+  Serial.println("serial begin");
   #if defined (__AVR_ATtiny85__)
   if (F_CPU == 16000000) clock_prescale_set(clock_div_1);
   #endif
   strip.begin();
   strip.show();
+  Serial.println("strip begin");
   //while (!Serial) ; // 시리얼 통신이 가능할 때까지 대기한다.
   delay(200);
   Wire.begin();
+  Serial.println("wire begin");
   
   //pinMode(10, INPUT);
   //pinMode(11, INPUT);
