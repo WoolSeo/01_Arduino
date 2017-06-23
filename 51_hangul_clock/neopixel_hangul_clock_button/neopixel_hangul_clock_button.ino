@@ -41,7 +41,8 @@ void setup() {
   pinMode(11, INPUT);
   pinMode(10, INPUT);
   
-  //setDate(00, 48, 18, 11, 5, 8, 16);
+  //seconds, minutes, hours, day, date, month, year
+  //setDate(25, 40, 12, 3, 16, 4, 17);
 }
 
 void loop() {
@@ -61,7 +62,7 @@ void loop() {
         hours = 0;
       }
       setDate(seconds, minutes, hours, 11, 5, 8, 16);
-        
+      ledReset(); 
       delay(500);
     }
     else if(digitalRead(11) == HIGH) {
@@ -70,6 +71,7 @@ void loop() {
         minutes -= 60;
       }
       setDate(seconds, minutes, hours, 11, 5, 8, 16);
+      ledReset();
       delay(500);
     }
   
