@@ -1,5 +1,5 @@
 int led = 12;
-int sw = 7;
+int sw = 2;
 
 void setup() {
   pinMode(led, OUTPUT);

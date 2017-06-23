@@ -8,8 +8,8 @@ void setup() {
 }
 
 void loop() {
-  CdS_value = analogRead(CdS_Pin)*(-1);
-  light_value = map(CdS_value, -1023, 0, 0, 255);
+  CdS_value = analogRead(CdS_Pin);
+  light_value = map(CdS_value, 0, 1023, 0, 255);
 
   Serial.print("CdS Value : ");
   Serial.print(CdS_value);
