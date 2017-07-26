@@ -1,8 +1,8 @@
 const int L_motor = 9;
 const int R_motor = 10;
 
-const int trigPin = 5;
-const int echoPin = 6;
+const int echoPin = 5;
+const int trigPin = 6;
 
 int duration, distance;
 
