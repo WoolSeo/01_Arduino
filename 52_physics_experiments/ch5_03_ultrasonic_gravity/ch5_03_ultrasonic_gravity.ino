@@ -4,7 +4,7 @@ const int echoPin = 12;
 int duration, distance;
 
 void setup() {
-    Serial.begin (115200);
+    Serial.begin (9600);
     pinMode(trigPin, OUTPUT);
     pinMode(echoPin, INPUT);
 }
