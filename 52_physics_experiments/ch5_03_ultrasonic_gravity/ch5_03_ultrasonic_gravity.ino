@@ -21,9 +21,11 @@ void loop() {
           Serial.print(millis());
           Serial.print(",");
           Serial.println(pulseIn(echoPin, HIGH)/(float)58);
+          delay(10);
         }
         Serial.println("Done");
         Serial.println();
+  
       }
     }  
 }

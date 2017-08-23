@@ -28,5 +28,5 @@ void loop() {
         Serial.println(pulseIn(echoPin, HIGH)/(float)58);
         delay(100);
     }
-    delay(20000);
+    while(true);
 }
