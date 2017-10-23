@@ -42,7 +42,7 @@ void setup() {
   pinMode(10, INPUT);
   
   //seconds, minutes, hours, day, date, month, year
-  //setDate(25, 51, 12, 3, 16, 4, 17);
+  //setDate(25, 50, 17, 3, 23, 10, 17);
 }
 
 void loop() {
