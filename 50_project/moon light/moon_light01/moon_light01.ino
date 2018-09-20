@@ -1,5 +1,3 @@
-//control led bright using potentiometer
-
 #include <Adafruit_NeoPixel.h>
 #ifdef __AVR__
   #include <avr/power.h>
@@ -18,8 +16,7 @@ void setup() {
   #if defined (__AVR_ATtiny85__)
     if (F_CPU == 16000000) clock_prescale_set(clock_div_1);
   #endif
-  Serial.begin(9600);
-  
+
   strip.begin();
   strip.show(); // Initialize all pixels to 'off'
 }
@@ -36,7 +33,7 @@ void loop() {
   }
 
   led_brgiht = map(b_value, 0, 12, 0, 255);
-  Serial.println(led_brgiht);
+
   //change color mode
   
   

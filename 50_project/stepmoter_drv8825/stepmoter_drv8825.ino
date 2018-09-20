@@ -1,20 +1,22 @@
-int steps=10;
-int dir =11;
-int stepTime=100;
+int steps=9;
+int dir =8;
+int stepTime=190;
 
 
 
 void setup() {
-  
+  //pinMode(13, OUTPUT);
   pinMode(steps, OUTPUT);
   pinMode(dir, OUTPUT);
+  digitalWrite(dir, HIGH);
+  //digitalWrite(13, HIGH);
 }
 
 
 void loop() {
-  digitalWrite(dir, HIGH);
+  
   digitalWrite(steps, HIGH);   
-  delay(stepTime);                      
+  delayMicroseconds(stepTime);                      
   digitalWrite(steps, LOW);    
-  delay(stepTime);                       
+  delayMicroseconds(1000);                       
 }

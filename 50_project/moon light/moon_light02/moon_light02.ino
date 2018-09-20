@@ -1,17 +1,20 @@
 //control led bright using potentiometer
+//chage led color using push button
 
 #include <Adafruit_NeoPixel.h>
 #ifdef __AVR__
   #include <avr/power.h>
 #endif
 
-#define PIN 12
+int led_PIN = 5;
+int button_PIN = 3;
+int poten_PIN = A0; 
 
 int b_value = 0; //brightness
 int led_brgiht = 0;
 int c_mode = 0; //color mode
 
-Adafruit_NeoPixel strip = Adafruit_NeoPixel(16, PIN, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel strip = Adafruit_NeoPixel(16,  led_PIN, NEO_GRB + NEO_KHZ800);
 
 
 void setup() {
@@ -19,7 +22,7 @@ void setup() {
     if (F_CPU == 16000000) clock_prescale_set(clock_div_1);
   #endif
   Serial.begin(9600);
-  
+  pinMode(button_PIN, INPUT_PULLUP);
   strip.begin();
   strip.show(); // Initialize all pixels to 'off'
 }
@@ -29,18 +32,50 @@ void loop() {
   //read potentialmeter value and convert proper led brgihtness
   int b_temp;
   
-  b_temp = (int)(analogRead(A0)/100);
+  //b_temp = (int)(analogRead(A0)/100);
+  b_temp = 1024;
+  Serial.println(b_temp);
   
   if(b_value != b_temp){
     b_value = b_temp;
   }
 
   led_brgiht = map(b_value, 0, 12, 0, 255);
-  Serial.println(led_brgiht);
+
   //change color mode
+  int sensorVal = digitalRead(button_PIN);
+  
+  // pull-up pushbutton
+  // HIGH when it's open, and LOW when it's pressed
+  if (sensorVal == HIGH) {
+    c_mode = c_mode + 1;
+    if(c_mode == 5) {
+      c_mode = 0;
+    }
+    delay(500);
+  } 
+
+  //Serial.println(c_mode);
+  //white
+  if( c_mode == 0 ) {
+    colorWipe(strip.Color(led_brgiht, led_brgiht, led_brgiht), 5);
+  }
+  //yellow
+  else if( c_mode == 1 ) {
+    colorWipe(strip.Color(led_brgiht, led_brgiht, 0), 5);
+  }
+  //red
+  else if( c_mode == 2 ) {
+    colorWipe(strip.Color(led_brgiht, 0, 0), 5);
+  }
+  else if( c_mode == 3 ) {
+    rainbow(100);
+  }
+  else if( c_mode == 4 ) {
+    theaterChaseRainbow(50);
+  }
   
   
-  colorWipe(strip.Color(led_brgiht, led_brgiht, led_brgiht), 5); // Red
   
   // Send a theater pixel chase in...
   //theaterChase(strip.Color(127, 127, 127), 50); // White
