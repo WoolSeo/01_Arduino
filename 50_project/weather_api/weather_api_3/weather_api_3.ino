@@ -16,7 +16,7 @@
 #include <WiFi.h>
 
 char ssid[] = "WOOLMacBook";     //  your network SSID (name)
-char pass[] = "1q3e5t7u";  // your network password
+char pass[] = "";  // your network password
 int status = WL_IDLE_STATUS;     // the Wifi radio's status
 
 const char* host = "www.kma.go.kr";

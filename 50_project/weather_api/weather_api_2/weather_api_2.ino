@@ -3,7 +3,7 @@
 // 와이파이 ssid을 입력해주세요.
 const char* ssid     = "WOOLMacBook";
 //와이파이 비밀번호를 입력해주세요.
-const char* password = "1q3e5t7u";
+const char* password = "";
 
 const char* host = "www.kma.go.kr";
 

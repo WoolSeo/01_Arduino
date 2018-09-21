@@ -4,7 +4,7 @@
 #include "WiFi.h"
 
 char ssid[] = "Wool iphone6 2nd";       //와이파이 SSID
-char pass[] = "1q3e5t7u";   //와이파이 password 
+char pass[] = "";   //와이파이 password 
 String location = "Gangnam"; //날씨정보를 보고싶은 지역
 
 
