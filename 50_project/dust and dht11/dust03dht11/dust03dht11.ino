@@ -3,14 +3,13 @@
 
 #include <SPI.h>
 #include <WiFi101.h>
-#include "arduino_secrets.h" 
 
-#define APIKEY    "nESF1DreNeshOI7Q6zdswaS7wzLtVFLILOfnpEs%2B2QIUSVhqQoZ6udu8Eil%2FNLlWOP4UfsTvE%2B4DJQaZyjekaA%3D%3D"
+#define APIKEY    "Z6udu8Eil%2FNLlWOP4UfsTvE%2B4DJQaZyjekaA%3D%3D"
 #define CITY    "신풍동"//"신풍동"
 #define VERSION    "1.3"
 
 ///////please enter your sensitive data in the Secret tab/arduino_secrets.h
-char ssid[] = "wool2";        // your network SSID (name)
+char ssid[] = "";        // your network SSID (name)
 char pass[] = "";    // your network password (use for WPA, or use as key for WEP)
 int keyIndex = 0;            // your network key Index number (needed only for WEP)
 

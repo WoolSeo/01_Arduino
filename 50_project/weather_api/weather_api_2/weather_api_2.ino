@@ -1,7 +1,7 @@
 #include <ESP8266WiFi.h>
 
 // 와이파이 ssid을 입력해주세요.
-const char* ssid     = "WOOLMacBook";
+const char* ssid     = "";
 //와이파이 비밀번호를 입력해주세요.
 const char* password = "";
 

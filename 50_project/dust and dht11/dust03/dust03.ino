@@ -3,14 +3,13 @@
 
 #include <SPI.h>
 #include <WiFi101.h>
-#include "arduino_secrets.h" 
 
-#define APIKEY    "nESF1DreNeshOI7Q6zdswaS7wzLtVFLILOfnpEs%2B2QIUSVhqQoZ6udu8Eil%2FNLlWOP4UfsTvE%2B4DJQaZyjekaA%3D%3D"
-#define CITY    "신풍동"//"신풍동"
+#define APIKEY    "2QIUSVhqQoZ6udu8Eil%2FNLlWOP4UfsTvE%2B4DJQaZyjekaA%3D%3D"
+#define CITY    "장유동"//"신풍동"
 #define VERSION    "1.3"
 
 ///////please enter your sensitive data in the Secret tab/arduino_secrets.h
-char ssid[] = "wool2";        // your network SSID (name)
+char ssid[] = "";        // your network SSID (name)
 char pass[] = "";    // your network password (use for WPA, or use as key for WEP)
 int keyIndex = 0;            // your network key Index number (needed only for WEP)
 
@@ -33,7 +32,7 @@ int count = 0;
 // Initialize the Ethernet client library
 // with the IP address and port of the server
 // that you want to connect to (port 80 is default for HTTP):
-WiFiClient client;
+
 
 void setup() {
   //Initialize serial and wait for port to open:
@@ -73,15 +72,43 @@ void setup() {
 
 void loop() {
   
+  WiFiClient client;
+  
+  Serial.println("\nconnect to server!");
 
-  connect_server();
-  //Serial.println("\nconnected to server!");
+  if( !client.connect(server, 80) ){
+    Serial.println("connect fail");
+    return;
+  }
+  client.print(F("GET /openapi/services/rest/ArpltnInforInqireSvc/getMsrstnAcctoRltmMesureDnsty?stationName="));
+    client.print(CITY);
+    client.print(F("&dataTerm=daily&pageNo=1&numOfRows=1&ServiceKey="));
+    client.print(APIKEY);
+    client.print(F("&ver="));
+    client.print(VERSION);
+    client.print(F(" HTTP/1.1\r\n"));
+    //client.print(F("Host: openapi.gbis.go.kr\r\n"));
+    client.print(F("Host: openapi.airkorea.or.kr\r\n"));
+    client.print(F("Connection: close\r\n"));
+    client.print(F("\r\n\r\n"));
+  //if (client.connect(server, 80)) {
+    
 
-  //while(!client.available()) {
-    //Serial.println("\nconnected to server!");
+    // send the HTTP PUT request
+    
+    // note the time that the connection was made
+    //lastConnectionTime = millis();
+    //getIsConnected = true;
+  Serial.println("Connecting...");
+  while(!client.available()) {
+    //connect_server();
+    //
     //Serial.print(millis());
-  //}
-  Serial.println("\nclient is available!");
+    
+    //delay(5000);
+  }
+  
+  //delay(10);
   
   int i = 0;
   // if there are incoming bytes available
@@ -133,7 +160,7 @@ void loop() {
   
   Serial.println(count);
   count++;
-  delay(1000);
+  delay(20000);
 
 
 }
@@ -158,31 +185,18 @@ void printWiFiStatus() {
 
 void connect_server() {
   
-  if (client.connect(server, 80)) {
-    Serial.println("Connecting...");
+  
 
-    // send the HTTP PUT request
-    client.print(F("GET /openapi/services/rest/ArpltnInforInqireSvc/getMsrstnAcctoRltmMesureDnsty?stationName="));
-    client.print(CITY);
-    client.print(F("&dataTerm=daily&pageNo=1&numOfRows=1&ServiceKey="));
-    client.print(APIKEY);
-    client.print(F("&ver="));
-    client.print(VERSION);
-    client.print(F(" HTTP/1.1\r\n"));
-    //client.print(F("Host: openapi.gbis.go.kr\r\n"));
-    client.print(F("Host: openapi.airkorea.or.kr\r\n"));
-    client.print(F("Connection: close\r\n"));
-    client.print(F("\r\n\r\n"));
-    // note the time that the connection was made
-    lastConnectionTime = millis();
-    getIsConnected = true;
+    delay(5000);
     
-  }
+  /*}
   else {
     // if you couldn't make a connection
     Serial.println("Connection failed");
     getIsConnected = false;
-  }
+
+    client.stop();
+  }*/
 
 }
 

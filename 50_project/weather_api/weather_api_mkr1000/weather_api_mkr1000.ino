@@ -4,7 +4,7 @@
 #include <SPI.h>
 #include <WiFi101.h>
 
-char ssid[] = "wool2";       //와이파이 SSID
+char ssid[] = "";       //와이파이 SSID
 char pass[] = "";   //와이파이 password 
 
 WiFiServer server(80);

@@ -15,7 +15,7 @@
 #include <SPI.h>
 #include <WiFi.h>
 
-char ssid[] = "WOOLMacBook";     //  your network SSID (name)
+char ssid[] = "";     //  your network SSID (name)
 char pass[] = "";  // your network password
 int status = WL_IDLE_STATUS;     // the Wifi radio's status
 

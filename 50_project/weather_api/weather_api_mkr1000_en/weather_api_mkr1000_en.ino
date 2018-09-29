@@ -1,7 +1,7 @@
 #include <SPI.h>
 #include <WiFi101.h>
 
-char ssid[] = "wool2";       //와이파이 SSID
+char ssid[] = "";       //와이파이 SSID
 char pass[] = "";   //와이파이 password 
 String location = "Gangnam"; //날씨정보를 보고싶은 지역
 
