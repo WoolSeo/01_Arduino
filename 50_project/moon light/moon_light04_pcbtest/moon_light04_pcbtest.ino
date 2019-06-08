@@ -6,9 +6,14 @@
   #include <avr/power.h>
 #endif
 
-int led_PIN = 5;
-int button_PIN = 3;
-int poten_PIN = A1; 
+int led_PIN = 7;
+
+#define SW1Pin 5
+#define SW2Pin 3
+
+int poten_PIN = A0; 
+
+
 
 int b_value = 0; //brightness
 int led_bright = 0;
@@ -22,7 +27,10 @@ void setup() {
     if (F_CPU == 16000000) clock_prescale_set(clock_div_1);
   #endif
   Serial.begin(9600);
-  pinMode(button_PIN, INPUT_PULLUP);
+  
+  pinMode(SW1Pin, INPUT_PULLUP);
+  pinMode(SW2Pin, INPUT_PULLUP);
+  
   strip.begin();
   strip.show(); // Initialize all pixels to 'off'
 }
@@ -43,11 +51,11 @@ void loop() {
   led_bright = map(b_value, 0, 12, 0, 255);
 
   //change color mode
-  int sensorVal = digitalRead(button_PIN);
+  int SW1Val = digitalRead(SW1Pin);
   
   // pull-up pushbutton
   // HIGH when it's open, and LOW when it's pressed
-  if (sensorVal == HIGH) {
+  if (SW1Val == HIGH) {
     c_mode = c_mode + 1;
     if(c_mode == 5) {
       c_mode = 0;

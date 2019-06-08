@@ -6,13 +6,16 @@
   #include <avr/power.h>
 #endif
 
-int led_PIN = 5;
-int button_PIN = 3;
-int poten_PIN = A1; 
+#define led_PIN 7
+#define SW1Pin 5
+#define SW2Pin 3
+
+int poten_PIN = A0; 
 
 int b_value = 0; //brightness
 int led_bright = 0;
 int c_mode = 0; //color mode
+int on_mode = 1;
 
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(16,  led_PIN, NEO_GRB + NEO_KHZ800);
 
@@ -22,32 +25,32 @@ void setup() {
     if (F_CPU == 16000000) clock_prescale_set(clock_div_1);
   #endif
   Serial.begin(9600);
-  pinMode(button_PIN, INPUT_PULLUP);
+  
+  pinMode(SW1Pin, INPUT_PULLUP);
+  pinMode(SW2Pin, INPUT_PULLUP);
+  
   strip.begin();
   strip.show(); // Initialize all pixels to 'off'
 }
 
 void loop() {
   
-  //read potentialmeter value and convert proper led brightness
-  int b_temp;
   
-  b_temp = (int)(analogRead(poten_PIN)/100);
-  //b_temp = 1000;
-  Serial.println(b_temp);
-  
-  if(b_value != b_temp){
-    b_value = b_temp;
+
+  int SW1Val = digitalRead(SW1Pin);
+  int SW2Val = digitalRead(SW2Pin);
+
+  //turnoff LEDs
+  if (SW2Val == HIGH) {
+    on_mode = on_mode * (-1);
+    Serial.println("change");
+    delay(1000);
   }
-
-  led_bright = map(b_value, 0, 12, 0, 255);
-
-  //change color mode
-  int sensorVal = digitalRead(button_PIN);
+  
   
   // pull-up pushbutton
   // HIGH when it's open, and LOW when it's pressed
-  if (sensorVal == HIGH) {
+  if (SW1Val == HIGH) {
     c_mode = c_mode + 1;
     if(c_mode == 5) {
       c_mode = 0;
@@ -56,24 +59,75 @@ void loop() {
   } 
 
   Serial.println(led_bright);
-  //white
-  if( c_mode == 0 ) {
-    colorWipe(strip.Color(led_bright, led_bright, led_bright), 5);
+  
+  if( on_mode == 1) {
+    //read potentialmeter value and convert proper led brightness
+    int b_temp;
+    //read A0
+    b_temp = (int)(analogRead(poten_PIN)/100);
+    //b_temp = 1000;
+    Serial.println(b_temp);
+  
+   if(b_value != b_temp){
+     b_value = b_temp;
+    }
+
+    led_bright = map(b_value, 0, 12, 0, 255);
+    
+    //white
+    if( c_mode == 0 ) {
+      colorWipe(strip.Color(led_bright, led_bright, led_bright), 5);
+    }
+    //yellow
+    else if( c_mode == 1 ) {
+      colorWipe(strip.Color(led_bright, led_bright, 0), 5);
+    }
+    //red
+    else if( c_mode == 2 ) {
+      colorWipe(strip.Color(led_bright, 0, 0), 5);
+    }
+    else if( c_mode == 3 ) {
+      rainbow(100);
+    }
+    else if( c_mode == 4 ) {
+      theaterChaseRainbow(50);
+    }
   }
-  //yellow
-  else if( c_mode == 1 ) {
-    colorWipe(strip.Color(led_bright, led_bright, 0), 5);
+  else {
+    while( on_mode == (-1) ){
+      
+      
+      if( c_mode == 0 ) {
+        colorWipe(strip.Color(led_bright, led_bright, led_bright), 5);
+      }
+      //yellow
+      else if( c_mode == 1 ) {
+        colorWipe(strip.Color(led_bright, led_bright, 0), 5);
+      }
+      //red
+      else if( c_mode == 2 ) {
+        colorWipe(strip.Color(led_bright, 0, 0), 5);
+      }
+      else if( c_mode == 3 ) {
+        rainbow(100);
+      }
+      else if( c_mode == 4 ) {
+        theaterChaseRainbow(50);
+      }
+
+      if( led_bright <= 0 ) {
+        led_bright = 0;
+        break;
+      }
+      else {
+        led_bright = led_bright - 1;
+      }
+      delay(6000);
+      
+    }
   }
-  //red
-  else if( c_mode == 2 ) {
-    colorWipe(strip.Color(led_bright, 0, 0), 5);
-  }
-  else if( c_mode == 3 ) {
-    rainbow(100);
-  }
-  else if( c_mode == 4 ) {
-    theaterChaseRainbow(50);
-  }
+  
+  
   
   
   

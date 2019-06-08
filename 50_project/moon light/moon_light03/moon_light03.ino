@@ -1,5 +1,4 @@
-//control led bright using potentiometer
-//chage led color using push button
+//fade out led
 
 #include <Adafruit_NeoPixel.h>
 #ifdef __AVR__
@@ -10,8 +9,8 @@ int led_PIN = 5;
 int button_PIN = 3;
 int poten_PIN = A1; 
 
-int b_value = 0; //brightness
-int led_bright = 0;
+int b_value = 0; 
+int led_time = 0;
 int c_mode = 0; //color mode
 
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(16,  led_PIN, NEO_GRB + NEO_KHZ800);
@@ -29,7 +28,7 @@ void setup() {
 
 void loop() {
   
-  //read potentialmeter value and convert proper led brightness
+  //read potentialmeter value and convert proper turnon time
   int b_temp;
   
   b_temp = (int)(analogRead(poten_PIN)/100);
@@ -40,7 +39,7 @@ void loop() {
     b_value = b_temp;
   }
 
-  led_bright = map(b_value, 0, 12, 0, 255);
+  led_time = map(b_value, 0, 12, 0, 255);
 
   //change color mode
   int sensorVal = digitalRead(button_PIN);
@@ -55,18 +54,18 @@ void loop() {
     delay(500);
   } 
 
-  Serial.println(led_bright);
+  Serial.println(led_time);
   //white
   if( c_mode == 0 ) {
-    colorWipe(strip.Color(led_bright, led_bright, led_bright), 5);
+    colorWipe(strip.Color(led_time, led_time, led_time), 5);
   }
   //yellow
   else if( c_mode == 1 ) {
-    colorWipe(strip.Color(led_bright, led_bright, 0), 5);
+    colorWipe(strip.Color(led_time, led_time, 0), 5);
   }
   //red
   else if( c_mode == 2 ) {
-    colorWipe(strip.Color(led_bright, 0, 0), 5);
+    colorWipe(strip.Color(led_time, 0, 0), 5);
   }
   else if( c_mode == 3 ) {
     rainbow(100);

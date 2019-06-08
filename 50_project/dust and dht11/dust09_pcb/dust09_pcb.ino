@@ -11,8 +11,8 @@ RTCZero rtc;
 WiFiClient client;
 
 ///////please enter your sensitive data in the Secret tab/arduino_secrets.h
-char ssid[] = "Wool iphone 8+";        // your network SSID (name)
-char pass[] = "1q3e5t7u";    // your network password (use for WPA, or use as key for WEP)
+char ssid[] = "wool2";        // your network SSID (name)
+char pass[] = "1q3e5t7u!";    // your network password (use for WPA, or use as key for WEP)
 int keyIndex = 0;            // your network key Index number (needed only for WEP)
 
 int status = WL_IDLE_STATUS;
@@ -45,6 +45,11 @@ Adafruit_ILI9341 tft = Adafruit_ILI9341(TFT_CS, TFT_DC, TFT_MOSI, TFT_CLK, TFT_R
 #define DHTTYPE DHT11
 DHT dht(DHTPIN,DHTTYPE);
 
+#define PiezoPin 3
+
+#define SW1Pin 13
+#define SW2Pin 14
+
 String tft_datatime = "";
 String tft_pm10value = "";
 String tft_pm25value = "";
@@ -60,6 +65,9 @@ void setup() {
   //Initialize serial and wait for port to open:
   Serial.begin(9600);
 
+  pinMode(SW1Pin, INPUT_PULLUP);
+  pinMode(SW2Pin, INPUT_PULLUP);
+  
   // check for the presence of the shield:
   if (WiFi.status() == WL_NO_SHIELD) {
     Serial.println("WiFi shield not present");
@@ -192,6 +200,14 @@ void loop() {
   status = WiFi.status();
     
   delay(refresh_lcd_Interval);
+
+  int SW2Val = digitalRead(SW1Pin);
+  if( SW2Val == LOW) {
+    tone(PiezoPin, 500, 500);
+    delay(500);
+  }
+  
+  
 
   Serial.println("--------------------------------------");
 
