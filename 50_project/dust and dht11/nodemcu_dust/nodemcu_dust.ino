@@ -6,12 +6,14 @@
 #include <time.h>
 
 
-const char* ssid = "";  // AP SSID
-const char* password = ""; // AP password
+const char* ssid = "wool2";  // AP SSID
+const char* password = "1q3e5t7u!"; // AP password
 const int httpPort = 80;
 
-#define APIKEY    "DJQaZyjekaA%3D%3D"
+#define APIKEY    "nESF1DreNeshOI7Q6zdswaS7wzLtVFLILOfnpEs%2B2QIUSVhqQoZ6udu8Eil%2FNLlWOP4UfsTvE%2B4DJQaZyjekaA%3D%3D"
 #define VERSION    "&ver=1.3"
+#define CITY    "종로구"//"신풍동"
+
 const char* SERVER = "openapi.airkorea.or.kr";
 WiFiClient client;
 
@@ -29,6 +31,7 @@ void Requesthttp(){
     Serial.println("\nfailed connection");
 
   }
+
 }
 
 void setup(void) {
@@ -43,56 +46,96 @@ void setup(void) {
     Serial.print(".");
     delay(1000);
   }
-//  Requesthttp();
+  
+  Serial.println("");
+  Serial.println("WiFi connected");
+  Serial.println("IP address: ");
+  Serial.println(WiFi.localIP());
 
 
 }
 
 void loop() {
+  //Requesthttp();
 
-  String a[3];
-  int i=0;
-  String temp;
-  String wfEn;
-  String reh;
-  String tmp_str;
-  static int IntervalReq=60;
+  dustRequest();
+  
+}
 
-  if(IntervalReq++>1000) {IntervalReq=0; Requesthttp();};
+void dustRequest() {
+  // close any connection before send a new request.
+  // This will free the socket on the WiFi shield
+  client.stop();
 
+  // if there's a successful connection:
+  if (client.connect(SERVER, httpPort)) {
+    Serial.println("connecting...");
+    // send the HTTP PUT request:
+    client.print(F("GET /openapi/services/rest/ArpltnInforInqireSvc/getMsrstnAcctoRltmMesureDnsty?stationName="));
+    client.print(CITY);
+    client.print(F("&dataTerm=month&pageNo=1&numOfRows=1&ServiceKey="));
+    client.print(APIKEY);
+    client.print(F("&ver="));
+    client.print(VERSION);
+    client.print(F(" HTTP/1.1\r\n"));
+    client.println("Host: openapi.airkorea.or.kr");
+    client.println("Connection: close");
+    client.println();
 
-  delay(50);
-  while(client.available()){
-
-    String line = client.readStringUntil('\n');
-    i= line.indexOf("</dataTime>");
-      Serial.println(line); 
-
-    if(i>0){
-      tmp_str="<dataTime>";
-      temp = line.substring(line.indexOf(tmp_str)+tmp_str.length(),i);
-      Serial.println(temp); 
-
-    }
-
-    i= line.indexOf("</pm10Value>");
-
-    if(i>0){
-      tmp_str="<pm10Value>";
-      wfEn = line.substring(line.indexOf(tmp_str)+tmp_str.length(),i);
-      Serial.println(wfEn);  
-    }
-
-    i= line.indexOf("</pm25Value>");
-
-    if(i>0){
-      tmp_str="<pm25Value>";
-      reh = line.substring(line.indexOf(tmp_str)+tmp_str.length(),i);
-      Serial.println(reh);  
-      client.stop();
-        break;
-    }
+    // note the time that the connection was made:
+    //lastConnectionTime = millis();
+  }
+  else {
+    // if you couldn't make a connection:
+    Serial.println("connection failed");
   }
 
-  delay(1000);
+  while(!client.available()) {
+  }
+
+  int i = 0;
+  while (client.available()) {
+    i++;
+    String line = client.readStringUntil('\n');
+    Serial.println(line);delay(100);
+  }
+    /*int datatime= line.indexOf("</dataTime>");
+    
+    if(datatime>0){
+      Serial.println("-----------------------------");
+      String tmp_str="<dataTime>";
+      String wt_datatime = line.substring(line.indexOf(tmp_str)+tmp_str.length(),datatime);
+      Serial.print("datetime : ");
+      Serial.println(wt_datatime);
+
+    }
+    delay(500);
+    int pm10value= line.indexOf("</pm10Value>");
+    
+    if(pm10value>0){
+      String tmp_str="<pm10Value>";
+      String wt_pm10value = line.substring(line.indexOf(tmp_str)+tmp_str.length(),pm10value);
+      Serial.print("pm10 value : ");
+      Serial.println(wt_pm10value);
+
+    }
+    delay(500);
+    
+    int pm25value= line.indexOf("</pm25Value>");
+    
+    if(pm25value>0){
+      String tmp_str="<pm25Value>";
+      String wt_pm25value = line.substring(line.indexOf(tmp_str)+tmp_str.length(),pm25value);
+      Serial.print("pm25 value : ");
+      Serial.println(wt_pm25value);
+
+
+    }
+    delay(500);*/
+  //}
+  delay(60000);
+  Serial.println("-----------------------------------------");
+  Serial.println();
+  Serial.println();
+  Serial.println();
 }
